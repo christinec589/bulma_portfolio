@@ -1,0 +1,248 @@
+@charset "utf-8";
+
+// Import a Google Font
+@import url('https://fonts.googleapis.com/css?family=Nunito:400,700');
+
+// Set your brand colors
+$blue: #000C4C;
+$purple: #7A306C;
+$teal: #085A6B;
+$peach: #FFCDB2;
+$grey-light: #E5E5E5;
+$white: #ffff;
+
+// Update Bulma's global variables
+$family-sans-serif: "Avenir",
+sans-serif;
+$grey-dark: $blue;
+$grey-light: $grey-light;
+$primary: $blue;
+$link: $purple;
+$widescreen-enabled: true;
+$fullhd-enabled: true;
+
+// Update some of Bulma's component variables
+$body-background-color: $white;
+$control-border-width: 2px;
+$input-border-color: transparent;
+$input-shadow: none;
+$button-text-color: $peach;
+
+// Import only what you need from Bulma
+@import "../node_modules/bulma/bulma.sass";
+
+// animation library
+@import "../node_modules/animate.css/animate.min.css";
+
+
+// Christines Custom Playground
+.container {
+    @media screen and (min-width: 1472px) {
+        max-width: 1700px;
+        width: 100%;
+    }
+}
+
+a.navbar-item.logo img {
+    max-height: 4rem;
+}
+
+a.navbar-item.link {
+    padding: 0 3rem;
+    font-size: 20px;
+}
+
+.text-content {
+
+    @include tablet {
+        text-align: right;
+    }
+}
+
+h2 .level-left.spaced {
+    margin-right: 2rem;
+}
+
+.see-more {
+    margin-top: 2rem;
+    text-align: center;
+
+    @include tablet {
+        margin-top: 10rem;
+    }
+}
+
+.see-more a {
+    color: #000C4C;
+}
+
+.jasmine-project {
+
+    margin-top: 5rem;
+
+    @include tablet {
+        margin-top: 15rem;
+    }
+}
+
+.jasmine-text {
+
+    @include tablet {
+        text-align: right;
+    }
+
+}
+
+a.button.is-primary.is-medium.casestudy {
+    margin-top: 1rem;
+    color: #FFCDB2;
+}
+
+.section.contact {
+    background-color: #085A6B;
+}
+
+.contact-text {
+    text-align: center;
+}
+
+.contact-text h1,
+.contact-text h2,
+.contact-text a.button {
+    color: #FFCDB2;
+}
+
+.contact-text h2 {
+    padding-top: 1rem;
+    text-align: left;
+    max-width: 550px;
+    margin: 0 auto;
+}
+
+.footer.spaced {
+    padding: 1.5rem;
+    background-color: #E5E5E5;
+}
+
+.level-right.icons img {
+    padding-left: 2rem;
+}
+
+.section.hero {
+    background-color: #085A6B;
+    text-align: center;
+}
+
+.section.hero h1,
+.section.hero h2,
+.section.hero h4,
+.section.hero p,
+.section.hero a {
+    color: #ffe1d1;
+}
+
+.button.prototype {
+    margin-top: 2rem;
+}
+
+.summary {
+    padding-top: 1rem;
+}
+
+.summary p {
+    text-align: left;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.problem {
+    padding: 1rem 0;
+}
+
+.role-text h4,
+.tool-text h4,
+.deliverable-text h4 {
+    margin-bottom: 1rem;
+}
+
+.problem-roles ul {
+    background-color: #E5E5E5;
+}
+
+
+
+.inner-box {
+    @include tablet {
+        display: flex;
+    }
+}
+
+.competitor-images img {
+    width: 80%;
+}
+
+.list-text {
+    vertical-align: super;
+    margin: 10px;
+}
+
+
+
+.competitorimg {
+    width: 50%;
+
+    @include tablet {
+        width: 100%;
+        height: 60px;
+    }
+}
+
+.checkmark img {
+    width: 20px;
+}
+
+.tile.is-child.box.persona_1,
+.tile.is-child.box.persona_1 h2 {
+    background-color: #000C4C;
+    color: #FFCDB2;
+}
+
+.tile.is-child.box.persona_2,
+.tile.is-child.box.persona_2 h2 {
+    background-color: #7A306C;
+    color: #ffe1d1;
+}
+
+.section.persona {
+    background-color: #E5E5E5;
+}
+
+.stories-text p {
+    width: 90%;
+
+}
+
+.table {
+    font-size: 13px;
+
+
+    @include desktop {
+        font-size: 15px;
+    }
+}
+
+.table thead {
+    background-color: #000C4C;
+}
+
+.table thead th {
+    color: #FFCDB2;
+}
+
+.card-image.flow {
+    padding: 1rem;
+}
+
+.flow-text p {
+    margin-bottom: 1rem;
+}
