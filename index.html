@@ -12,24 +12,28 @@
 <body>
   <nav class="navbar is-spaced" role="navigation" aria-label="main navigation">
     <div class="navbar-brand">
-      <a class="navbar-item logo" href="https://christinec.design">
+      <a class="navbar-item logo" href="index.html">
         <img src="img/desktop_logo.svg">
       </a>
-
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
     </div>
 
     <div id="navbarBasicExample" class="navbar-menu">
       <div class="navbar-end">
-        <a class="navbar-item link" href="#project-section">
+        <a class="navbar-item link" href="index.html">
           Work
         </a>
 
-        <a class="navbar-item link" href="https://christinec.design/about.html">
+        <a class="navbar-item link" href="about.html">
           About
         </a>
 
         <a class="navbar-item link"
-          href="https://drive.google.com/file/d/1JeuGsa5nqbM97Tq3hzl494-RC_7l7gCu/view?usp=sharing">
+          href="https://drive.google.com/file/d/1JeuGsa5nqbM97Tq3hzl494-RC_7l7gCu/view?usp=sharing" target="_blank">
           Resume
         </a>
       </div>
@@ -38,9 +42,9 @@
   </nav>
   <section class="section top">
     <div class="container">
-      <div class="columns is-vcentered is-centered">
+      <div class="columns text-design is-vcentered is-centered">
 
-        <div class="column">
+        <div class="column text">
           <div class="text-content animated  fadeInLeft delay-1.5s">
             <h1 class="title is-spaced">
               Hi, I'm Christine!
@@ -55,7 +59,7 @@
         </div>
       </div>
       <div class="see-more">
-        <div class="link">
+        <div class="link animated infinite pulse delay-2s">
           <a class="work-link" href="#scrollto">See my latest work</a>
         </div>
         <div class="triangle">
@@ -66,16 +70,17 @@
     </div>
   </section>
 
-  <section id="scrollto" class="section is-large project">
-
+  <section id="scrollto" class="section is-medium project">
+    <div class="arrow-right"></div>
     <div class="container ">
-      <div class="carecloud-project">
-        <div class="columns is-vcentered is-centered">
 
-          <div class="column is-half">
+      <div class="carecloud-project">
+
+        <div class="columns is-vcentered is-centered">
+          <div class="column is-half-desktop is-6-widescreen care-cloud-img">
             <img src="img/carecloud_desktop.svg">
           </div>
-          <div class="column is-one-third">
+          <div class="column is-half is-5-tablet care-cloud-content">
             <div class="carecloud-text">
               <h1 class="title is-spaced">
                 CareCloud
@@ -91,10 +96,15 @@
           </div>
         </div>
       </div>
-
+    </div>
+  </section>
+  <section class="section is-large jasmine">
+    <div class="arrow-left"></div>
+    <div class="container">
       <div class="jasmine-project">
+
         <div class="columns is-vcentered is-centered">
-          <div class="column is-one-third">
+          <div class="column is-half">
             <div class="jasmine-text">
               <h1 class="title is-spaced">
                 Jasmine Music Therapy
@@ -105,17 +115,17 @@
               <h5 class="subtitle is-5">
                 Music Therapy Website
               </h5>
-              <a class="button is-primary is-medium casestudy" href="carecloud.html">See Case Study</a>
+              <a class="button is-primary is-medium casestudy" href="carecloud.html">Coming Soon!</a>
             </div>
           </div>
-          <div class="column is-half">
+          <div class="column is-half-desktop is-6-widescreen is-7-tablet">
             <img src="img/jasmine_desktop.svg">
           </div>
         </div>
       </div>
     </div>
-    </div>
   </section>
+
   <section class="section contact">
     <div class="contact-text">
       <h1 class="title is spaced">
@@ -125,37 +135,44 @@
         social platforms below.</h2>
 
       <a class="button is-link is-medium" href="about.html">About Me</a>
-      <a class="button is-primary is-medium" href="mailto:christinechiang.ux@gmail.com">Contact Me</a>
+      <a class="button is-primary is-medium" href="mailto:christinechiang.ux@gmail.com" target="_blank">Contact Me</a>
     </div>
   </section>
-  <footer class="footer spaced">
-    <nav class="level">
-      <div class="level-left">
-        <p class="level-item">
-          <img src="img/copyright.svg" alt="copyright Icon">
-        </p>
-        <p class="level-item">
-          Designed and Developed by Christine Chiang
-        </p>
-      </div>
-      <div class="level-right icons">
-        <a class="level-item" href="https://linkedin.com/in/christine-chiang-4436397b">
-          <img src="img/linkedin.svg" alt="LinkedIn Icon">
-        </a>
-        <a class="level-item" href="https://www.instagram.com/christine_dodo/">
-          <img src="img/instagram.svg" alt="Instagram Icon">
-        </a>
-        <a class="level-item" href="https://twitter.com/cchiang589">
-          <img src="img/twitter.svg" alt="Twitter Icon">
-        </a>
-        <a class="level-item" href="https://github.com/christinec589">
-          <img src="img/github.svg" alt="Github Icon">
-        </a>
+  <footer class="footer">
+    <nav class="level is-mobile">
+      <div class="level-item has-text-centered">
+        <div>
+          <div class="footer">
+            <a class="linkedin" href="https://linkedin.com/in/christine-chiang-4436397b" target="_blank">
+              <img src="img/linkedin.svg" alt="LinkedIn Icon">
+            </a>
+            <a class="instagram" href="https://www.instagram.com/christine_dodo/" target="_blank">
+              <img src="img/instagram.svg" alt="Instagram Icon">
+            </a>
+            <a class="twitter" href="https://twitter.com/cchiang589" target="_blank">
+              <img src="img/twitter.svg" alt="Twitter Icon">
+            </a>
+            <a class="github" href="https://github.com/christinec589" target="_blank">
+              <img src="img/github.svg" alt="Github Icon">
+            </a>
+          </div>
+          <div class="copyright">
+            <div class="copyright">
+              <img src="img/copyright.svg" alt="copyright Icon">
+            </div>
+            <div class="designed">
+              <p>
+                Designed and Developed by Christine Chiang </p>
+            </div>
+          </div>
+        </div>
       </div>
     </nav>
-    </div>
+
   </footer>
   </div>
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script src="/js/app.js"></script>
 </body>
 
 </html>
